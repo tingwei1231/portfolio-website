@@ -7,7 +7,8 @@ export const personalInfo = {
   github: "https://github.com/yourusername",
   linkedin: "https://linkedin.com/in/yourprofile",
   about: "具備 AI 語音處理、後端開發與軟體工程經驗的研發工程師，性格開朗且熱衷於結合最新技術解決實際問題。曾在多個專案中扮演核心開發與領導角色，從全端系統架構到 AI 輔助應用皆有落實產出的實務經驗。",
-  resumeUrl: "/resume.pdf" 
+  resumeUrl: "/resume.pdf",
+  imgUrl: "/tingwei.JPG"
 };
 
 export const education = [
@@ -74,8 +75,8 @@ export const projects = [
     title: "TOmni-Care 台語語音助理",
     tags: ["LLM", "Python", "Faster-Whisper", "RAG", "Bert-VITS2", "LangGraph"],
     description: "結合 LangGraph 狀態機與 RAG 醫療知識庫，開發支援台語 ASR/TTS 與情緒感知功能的低延遲 AI 語音照護助理。",
-    link: "https://github.com/yourusername/tomni-care", 
-    imgUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" 
+    link: "https://github.com/yourusername/tomni-care",
+    imgUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
   },
   {
     id: 2,

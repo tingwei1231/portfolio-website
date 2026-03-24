@@ -8,8 +8,8 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "echo Starting custom deploy...",
+    "deploy": "node deploy.js"
   },
   "dependencies": {
     "lucide-react": "^0.300.0",
