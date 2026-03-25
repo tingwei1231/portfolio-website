@@ -93,14 +93,14 @@ export const projects = [
     type: "album",
     gallery: [
       "./tsohns117.jpg",
-      "./tsohns-index.png",
-      "./tsohns-info.png",
-      "./tsohns-keynote1.png",
-      "./tsohns-keynote2.png",
-      "./tsohns-moderator.png",
-      "./tsohns-search.png",
-      "./tsohns-session.png",
-      "./tsohns-speaker.png"
+      "./tsohns-index.PNG",
+      "./tsohns-info.PNG",
+      "./tsohns-keynote1.PNG",
+      "./tsohns-keynote2.PNG",
+      "./tsohns-moderator.PNG",
+      "./tsohns-search.PNG",
+      "./tsohns-session.PNG",
+      "./tsohns-speaker.PNG"
     ],
     imgUrl: "./tsohns117.jpg"
   },
