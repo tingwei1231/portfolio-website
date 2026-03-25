@@ -34,7 +34,7 @@ export const experience = [
     description: "舉辦六屆傳承盃排球錦標賽，負責賽事規劃、隊伍招募、場地安排、裁判排班與賽事進行等相關事宜。"
   },
   {
-    date: "2025",
+    date: "2024",
     title: "技術合作夥伴",
     institution: "台灣耳鼻喉頭頸外科醫學會",
     description: "協助開發學術演講會雙平台 (iOS/Android) 專屬 APP，提供與會者良好流暢的數位互動體驗。"
@@ -78,6 +78,7 @@ export const research = [
 export const projects = [
   {
     id: 1,
+    date: "2026/02 – 2026/03",
     title: "TOmni-Care 台語語音助理",
     tags: ["LLM", "Python", "Faster-Whisper", "RAG", "Bert-VITS2", "LangGraph"],
     description: "結合 LangGraph 狀態機與 RAG 醫療知識庫，開發支援台語 ASR/TTS 與情緒感知功能的低延遲 AI 語音照護助理。",
@@ -86,6 +87,7 @@ export const projects = [
   },
   {
     id: 2,
+    date: "2024/10 – 2024/11",
     title: "雙平台醫學會學術演講會 APP",
     tags: ["Android Studio", "Swift", "MySQL"],
     description: "開發支援 iOS 與 Android 的學術演講 APP，提供日程、交通、講座資訊，提升參與者的體驗。",
@@ -106,6 +108,7 @@ export const projects = [
   },
   {
     id: 3,
+    date: "2025/02 – 2025/06",
     title: "課程預約系統",
     tags: ["PHP", "MySQL", "HTML", "CSS", "Bootstrap"],
     description: "用 PHP 結合 MySQL 讓課堂學生可線上預約助教課的作業 Demo 及小考時段，提高教學管理效率，HTML 結合 CSS 及 Bootstrap 優化界面美觀。",
@@ -114,6 +117,7 @@ export const projects = [
   },
   {
     id: 4,
+    date: "2026/01 – 2026/02",
     title: "傳承盃排球錦標賽網站",
     tags: ["HTML", "CSS", "Vibe Coding"],
     description: "開發一套以 Google Sheets 為資料來源的 Serverless 排球賽事即時資訊看板系統，提供比分、賽程與裁判排班同步顯示。",
@@ -128,6 +132,7 @@ export const projects = [
   },
   {
     id: 5,
+    date: "2022/07 – 2022/12",
     title: "排球戰術追蹤研究",
     tags: ["Python", "Image Processing", "OpenCV"],
     description: "利用 OpenCV 辨識排球比賽影片中球員的戰術，並將球員轉換為 2D 俯視圖，幫助新手理解比賽戰術。(專題成果展 第二名)",
@@ -143,6 +148,7 @@ export const projects = [
   },
   {
     id: 6,
+    date: "2024/09 – 2025/07",
     title: "臨床醫學博士學位學程網頁維護",
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     description: "協助維護臨床醫學博士學位學程網頁，維護網頁運作，更新公告與教授論文資料以及修正網頁模板。",
@@ -151,6 +157,7 @@ export const projects = [
   },
   {
     id: 7,
+    date: "2025/02 – 2025/07",
     title: "國立中山大學未來學生網頁維護",
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     description: "協助維護國立中山大學未來學生網頁，提供新生良好的資訊獲取管道。",

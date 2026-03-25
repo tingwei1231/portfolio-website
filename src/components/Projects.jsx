@@ -65,6 +65,9 @@ const Projects = () => {
 
               {/* Content */}
               <div className="p-6 flex flex-col flex-1 relative">
+                {project.date && (
+                  <span className="block text-accent text-sm font-bold mb-1 tracking-wider">{project.date}</span>
+                )}
                 <h4 className="text-xl font-bold text-text mb-3 group-hover:text-primary transition-colors">{project.title}</h4>
 
                 {/* Tech Tags */}
