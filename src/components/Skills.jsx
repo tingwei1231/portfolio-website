@@ -16,8 +16,8 @@ const Skills = () => {
               <h4 className="text-lg font-semibold text-text mb-6 pb-2 border-b border-card group-hover:border-primary/50 transition-colors uppercase tracking-wide text-sm">{category}</h4>
               <div className="flex flex-wrap gap-2">
                 {skillList.map((skill, sIndex) => (
-                  <span 
-                    key={sIndex} 
+                  <span
+                    key={sIndex}
                     className="px-3 py-1.5 bg-darker/80 text-muted/90 text-sm font-medium rounded-lg border border-darker hover:border-primary/50 hover:text-primary transition-all shadow-sm cursor-default"
                   >
                     {skill}
