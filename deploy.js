@@ -18,8 +18,8 @@ try {
   
   execSync('git init', { cwd: distPath, stdio: 'inherit' });
   
-  // Checkout an orphan branch named main because we want to push to remote gh-pages
-  execSync('git checkout -b main', { cwd: distPath, stdio: 'ignore' });
+  // Rename the default branch to main
+  execSync('git branch -M main', { cwd: distPath, stdio: 'ignore' });
   execSync('git add -A', { cwd: distPath, stdio: 'inherit' });
   execSync('git commit -m "Auto-deploy via deploy.js"', { cwd: distPath, stdio: 'inherit' });
   

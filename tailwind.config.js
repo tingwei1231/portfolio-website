@@ -8,13 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        dark: '#ece9e4',    // 莫蘭迪暖粉灰
-        darker: '#f5f3f0',  // 莫蘭迪極淺灰底色
-        card: '#ffffff',    // 白卡片背景
-        primary: '#8ba19a', // 莫蘭迪灰綠 (低彩度優雅綠)
-        accent: '#c0a9a0',  // 莫蘭迪乾燥玫瑰
-        text: '#3b4348',    // 柔和的深灰文字
-        muted: '#7d8995',   // 低對比的灰藍文字
+        dark: '#d6d0c4',    // 較深一點的莫蘭迪暖卡其/灰
+        darker: '#e4dece',  // 較深一點的莫蘭迪底色，帶有溫暖質感
+        card: '#fcfbf9',    // 保留接近純白的卡片，增加立體層次對比
+        primary: '#768c85', // 更深一點的莫蘭迪灰綠
+        accent: '#ab958b',  // 更深一點的乾燥玫瑰
+        text: '#2d3338',    // 加深文字對比
+        muted: '#6a767f',   // 柔和灰文字
       },
     },
   },
