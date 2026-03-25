@@ -95,8 +95,8 @@ export const projects = [
       "./tsohns117.jpg",
       "./tsohns-index.PNG",
       "./tsohns-info.PNG",
-      "./tsohns-keynote1.PNG",
-      "./tsohns-keynote2.PNG",
+      "./tsohns-keynote speech1.PNG",
+      "./tsohns-keynote speech2.PNG",
       "./tsohns-moderator.PNG",
       "./tsohns-search.PNG",
       "./tsohns-session.PNG",
@@ -118,6 +118,12 @@ export const projects = [
     tags: ["HTML", "CSS", "Vibe Coding"],
     description: "開發一套以 Google Sheets 為資料來源的 Serverless 排球賽事即時資訊看板系統，提供比分、賽程與裁判排班同步顯示。",
     link: "https://sites.google.com/view/volleyballtorchchampionship",
+    type: "album",
+    gallery: [
+      "./volleyballtorch.png",
+      "./volleyballtorch-1.png",
+      "./volleyballtorch-2.png"
+    ],
     imgUrl: "./volleyballtorch.png"
   },
   {
