@@ -11,7 +11,7 @@ const Hero = () => {
 
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
         <div className="flex-1 text-center md:text-left z-10">
-          <p className="text-primary font-medium tracking-widest text-sm uppercase mb-3">Hello World, I am</p>
+          <p className="text-primary font-medium tracking-widest text-sm uppercase mb-3">Hello, I'm</p>
           <h1 className="text-4xl md:text-6xl font-extrabold text-text mb-4 leading-tight">
             {personalInfo.name.split(' ')[0]} <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">

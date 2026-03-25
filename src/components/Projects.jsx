@@ -39,53 +39,53 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div key={project.id} className="flex flex-col bg-card rounded-2xl overflow-hidden border border-card shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
-              
+
               {/* Project Image - Click to Zoom or open Album */}
-              <div 
+              <div
                 className="h-48 overflow-hidden relative cursor-pointer"
                 onClick={() => openModal(project)}
                 title={project.type === 'album' ? "點擊瀏覽相簿" : "點擊放大圖片"}
               >
                 {project.type === 'album' && (
                   <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs px-2.5 py-1.5 rounded-md z-20 flex items-center gap-1.5 font-medium shadow-sm">
-                    <Image size={14} /> 相簿 ({project.gallery?.length || 0})
+                    <Image size={14} /> Album ({project.gallery?.length || 0})
                   </div>
                 )}
                 <div className="absolute inset-0 bg-darker/10 group-hover:bg-transparent transition-colors z-10 w-full h-full flex items-center justify-center">
-                   <span className="bg-darker/90 text-text text-sm py-1.5 px-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity transform scale-95 group-hover:scale-100 font-bold shadow-md">
-                     {project.type === 'album' ? '查看相簿' : '查看大圖'}
-                   </span>
+                  <span className="bg-darker/90 text-text text-sm py-1.5 px-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity transform scale-95 group-hover:scale-100 font-bold shadow-md">
+                    {project.type === 'album' ? 'View Album' : 'View Image'}
+                  </span>
                 </div>
-                <img 
-                  src={project.imgUrl} 
-                  alt={project.title} 
+                <img
+                  src={project.imgUrl}
+                  alt={project.title}
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              
+
               {/* Content */}
               <div className="p-6 flex flex-col flex-1 relative">
                 <h4 className="text-xl font-bold text-text mb-3 group-hover:text-primary transition-colors">{project.title}</h4>
-                
+
                 {/* Tech Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, idx) => (
-                     <span key={idx} className="text-xs font-semibold text-accent bg-primary/10 px-2 py-1 rounded-md">
-                       {tag}
-                     </span>
+                    <span key={idx} className="text-xs font-semibold text-accent bg-primary/10 px-2 py-1 rounded-md">
+                      {tag}
+                    </span>
                   ))}
                 </div>
-                
+
                 <p className="text-sm text-muted/90 mb-6 leading-relaxed flex-1">
                   {project.description}
                 </p>
-                
+
                 {/* Actions (More Button) -> Right Aligned */}
                 <div className="flex justify-end mt-auto pt-4 border-t border-darker">
-                  <a 
-                    href={project.link || "#"} 
-                    target="_blank" 
-                    rel="noreferrer" 
+                  <a
+                    href={project.link || "#"}
+                    target="_blank"
+                    rel="noreferrer"
                     className="flex items-center gap-1 text-sm font-bold text-primary hover:text-accent transition-colors py-1 px-2 rounded-lg hover:bg-primary/5"
                   >
                     More <ChevronRight size={18} />
@@ -99,43 +99,43 @@ const Projects = () => {
 
       {/* Fullscreen Image / Album Modal */}
       {selectedProject && (
-        <div 
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 animate-in fade-in duration-200" 
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 animate-in fade-in duration-200"
           onClick={() => setSelectedProject(null)}
         >
-          <div 
-            className="relative max-w-5xl w-full max-h-[90vh] flex flex-col justify-center items-center" 
+          <div
+            className="relative max-w-5xl w-full max-h-[90vh] flex flex-col justify-center items-center"
             onClick={handleModalContentClick}
           >
-            <button 
+            <button
               className="absolute -top-12 right-0 md:-right-4 text-white/70 hover:text-white p-2 transition-colors z-50 bg-black/30 hover:bg-black/80 rounded-full"
               onClick={() => setSelectedProject(null)}
-              title="關閉"
+              title="close"
             >
               <X size={28} />
             </button>
 
             {selectedProject.type === 'album' && selectedProject.gallery ? (
               <div className="relative w-full flex items-center justify-center">
-                <button 
+                <button
                   className="absolute left-2 md:-left-8 z-50 bg-black/50 text-white p-2 md:p-3 rounded-full hover:bg-primary transition-colors"
                   onClick={prevImage}
                 >
                   <ChevronLeft size={28} />
                 </button>
-                
+
                 <div className="relative">
-                  <img 
-                    src={selectedProject.gallery[currentImageIndex]} 
-                    className="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl transition-all duration-300" 
-                    alt={`${selectedProject.title} preview ${currentImageIndex + 1}`} 
+                  <img
+                    src={selectedProject.gallery[currentImageIndex]}
+                    className="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl transition-all duration-300"
+                    alt={`${selectedProject.title} preview ${currentImageIndex + 1}`}
                   />
                   <div className="absolute -bottom-10 left-0 right-0 text-center text-white/80 font-medium tracking-widest text-sm">
                     {currentImageIndex + 1} / {selectedProject.gallery.length}
                   </div>
                 </div>
 
-                <button 
+                <button
                   className="absolute right-2 md:-right-8 z-50 bg-black/50 text-white p-2 md:p-3 rounded-full hover:bg-primary transition-colors"
                   onClick={nextImage}
                 >
@@ -143,10 +143,10 @@ const Projects = () => {
                 </button>
               </div>
             ) : (
-              <img 
-                src={selectedProject.imgUrl} 
-                className="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl" 
-                alt="Project zoom preview" 
+              <img
+                src={selectedProject.imgUrl}
+                className="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl"
+                alt="Project zoom preview"
               />
             )}
           </div>

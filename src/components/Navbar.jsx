@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-            TWC.
+            CTW
           </a>
 
           {/* Desktop Nav */}

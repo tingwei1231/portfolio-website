@@ -1,12 +1,12 @@
 export const personalInfo = {
   name: "陳廷瑋 (Ting-Wei Chen)",
-  title: "Software Engineer / AI & Backend Developer",
+  title: "Software Engineer",
   email: "kino87654@gmail.com",
   phone: "0965-359-739",
   location: "臺中市西屯區惠來路三段 218號9樓之 2",
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourprofile",
-  about: "具備 AI 語音處理、後端開發與軟體工程經驗的研發工程師，性格開朗且熱衷於結合最新技術解決實際問題。曾在多個專案中扮演核心開發與領導角色，從全端系統架構到 AI 輔助應用皆有落實產出的實務經驗。",
+  github: "https://github.com/tingwei1231",
+  linkedin: "https://www.linkedin.com/in/tingwei1231/",
+  about: "性格開朗且熱衷於結合最新技術解決實際問題。在多個專案中擔任核心開發與領導角色，從全端系統架構到 AI 輔助應用皆有實務經驗。",
   resumeUrl: "./resume.pdf",
   imgUrl: "./tingwei.JPG"
 };
@@ -22,7 +22,7 @@ export const education = [
     date: "2019/09 – 2023/06",
     title: "資訊科學系 學士",
     institution: "國立臺北教育大學",
-    description: "具備扎實資工基礎，並熱心參與校園社團與系上活動。"
+    description: "擔任系學會長，百人聯合迎新總召以及系排球隊隊長。負責統籌大型營隊、分配預算與跨部門溝通，具備高度抗壓性、團隊領導與專案管理能力。"
   }
 ];
 
@@ -82,28 +82,34 @@ export const projects = [
     tags: ["LLM", "Python", "Faster-Whisper", "RAG", "Bert-VITS2", "LangGraph"],
     description: "結合 LangGraph 狀態機與 RAG 醫療知識庫，開發支援台語 ASR/TTS 與情緒感知功能的低延遲 AI 語音照護助理。",
     link: "https://github.com/tingwei1231/tomni-care",
-    imgUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    imgUrl: "./TOmin-Care.png"
   },
   {
     id: 2,
     title: "雙平台醫學會學術演講會 APP",
     tags: ["Android Studio", "Swift", "MySQL"],
     description: "開發支援 iOS 與 Android 的學術演講 APP，提供日程、交通、講座資訊，提升參與者的體驗。",
-    link: "https://github.com/yourusername",
+    link: "",
     type: "album",
     gallery: [
-      "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop&q=80", 
-      "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=800&auto=format&fit=crop&q=80"
+      "./tsohns117.jpg",
+      "./tsohns-index.png",
+      "./tsohns-info.png",
+      "./tsohns-keynote1.png",
+      "./tsohns-keynote2.png",
+      "./tsohns-moderator.png",
+      "./tsohns-search.png",
+      "./tsohns-session.png",
+      "./tsohns-speaker.png"
     ],
-    imgUrl: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    imgUrl: "./tsohns117.jpg"
   },
   {
     id: 3,
     title: "課程預約系統",
     tags: ["PHP", "MySQL", "HTML", "CSS", "Bootstrap"],
     description: "用 PHP 結合 MySQL 讓課堂學生可線上預約助教課的作業 Demo 及小考時段，提高教學管理效率，HTML 結合 CSS 及 Bootstrap 優化界面美觀。",
-    link: "https://github.com/yourusername",
+    link: "",
     imgUrl: "./demo.png"
   },
   {
@@ -119,8 +125,15 @@ export const projects = [
     title: "排球戰術追蹤研究",
     tags: ["Python", "Image Processing", "OpenCV"],
     description: "利用 OpenCV 辨識排球比賽影片中球員的戰術，並將球員轉換為 2D 俯視圖，幫助新手理解比賽戰術。(專題成果展 第二名)",
-    link: "https://github.com/yourusername",
-    imgUrl: "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    link: "",
+    type: "album",
+    gallery: [
+      "./volleyballtracker.png",
+      "./volleyballtracker-1.png",
+      "./volleyballtracker-2.png",
+      "./volleyballtracker-3.png"
+    ],
+    imgUrl: "./volleyballtracker.png"
   },
   {
     id: 6,
