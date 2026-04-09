@@ -1,13 +1,20 @@
 import React from 'react';
-import { skills } from '../data';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Skills = () => {
+  const { lang, t } = useLanguage();
+  const { skills } = t;
+
   return (
     <section id="skills" className="py-20 px-6 lg:px-8 bg-dark/30 border-y border-card">
       <div className="max-w-5xl mx-auto">
         <div className="mb-12 text-center">
-          <h2 className="text-sm font-semibold text-primary tracking-widest uppercase mb-2">Tech Stack</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-text">Professional Skills</h3>
+          <h2 className="text-sm font-semibold text-primary tracking-widest uppercase mb-2">
+            {lang === 'zh' ? '技術標籤' : 'Tech Stack'}
+          </h2>
+          <h3 className="text-3xl md:text-4xl font-bold text-text">
+            {lang === 'zh' ? '專業技能' : 'Professional Skills'}
+          </h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -1,13 +1,20 @@
 import React from 'react';
-import { education, experience } from '../data';
+import { useLanguage } from '../contexts/LanguageContext';
 import { Briefcase, GraduationCap } from 'lucide-react';
 
 const Experience = () => {
+  const { lang, t } = useLanguage();
+  const { education, experience } = t;
+
   return (
     <section id="experience" className="py-20 px-6 lg:px-8 max-w-6xl mx-auto">
       <div className="mb-14 text-center">
-        <h2 className="text-sm font-semibold text-primary tracking-widest uppercase mb-2">My Journey</h2>
-        <h3 className="text-3xl md:text-4xl font-bold text-text">Education & Experience</h3>
+        <h2 className="text-sm font-semibold text-primary tracking-widest uppercase mb-2">
+          {lang === 'zh' ? '我的歷程' : 'My Journey'}
+        </h2>
+        <h3 className="text-3xl md:text-4xl font-bold text-text">
+          {lang === 'zh' ? '學歷與經歷' : 'Education & Experience'}
+        </h3>
       </div>
       
       <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
@@ -15,7 +22,9 @@ const Experience = () => {
         <div>
           <div className="flex items-center gap-3 mb-8 justify-center md:justify-start">
             <GraduationCap className="text-primary" size={30} />
-            <h4 className="text-2xl font-bold text-text">Education</h4>
+            <h4 className="text-2xl font-bold text-text">
+              {lang === 'zh' ? '學歷' : 'Education'}
+            </h4>
           </div>
           <div className="relative border-l-2 border-primary/30 ml-3 md:ml-4">
             {education.map((item, index) => (
@@ -37,7 +46,9 @@ const Experience = () => {
         <div>
           <div className="flex items-center gap-3 mb-8 justify-center md:justify-start">
             <Briefcase className="text-accent" size={28} />
-            <h4 className="text-2xl font-bold text-text">Experience & Leadership</h4>
+            <h4 className="text-2xl font-bold text-text">
+              {lang === 'zh' ? '經歷與領導' : 'Experience & Leadership'}
+            </h4>
           </div>
           <div className="relative border-l-2 border-accent/30 ml-3 md:ml-4">
             {experience.map((item, index) => (

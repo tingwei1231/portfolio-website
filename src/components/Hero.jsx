@@ -1,8 +1,11 @@
 import React from 'react';
 import { Download, ChevronRight } from 'lucide-react';
-import { personalInfo } from '../data';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Hero = () => {
+  const { lang, t } = useLanguage();
+  const { personalInfo } = t;
+
   return (
     <section id="about" className="pt-32 pb-20 md:pt-48 md:pb-32 px-6 lg:px-8 max-w-6xl mx-auto relative overflow-hidden">
       {/* Background Decor */}
@@ -11,7 +14,9 @@ const Hero = () => {
 
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
         <div className="flex-1 text-center md:text-left z-10">
-          <p className="text-primary font-medium tracking-widest text-sm uppercase mb-3">Hello, I'm</p>
+          <p className="text-primary font-medium tracking-widest text-sm uppercase mb-3">
+            {lang === 'zh' ? '你好，我是' : "Hello, I'm"}
+          </p>
           <h1 className="text-4xl md:text-6xl font-extrabold text-text mb-4 leading-tight">
             {personalInfo.name.split(' ')[0]} <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
@@ -32,13 +37,13 @@ const Hero = () => {
               className="group flex items-center gap-2 bg-primary hover:bg-accent text-white px-8 py-3.5 rounded-full font-medium transition-all shadow-[0_0_20px_rgba(59,130,246,0.25)] hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] active:scale-95"
             >
               <Download size={18} className="group-hover:-translate-y-1 transition-transform" />
-              Download Resume (PDF)
+              {lang === 'zh' ? '下載履歷 (PDF)' : 'Download Resume'}
             </a>
             <a
               href="#projects"
               className="group flex items-center gap-2 text-text hover:text-primary px-6 py-3 font-medium transition-colors"
             >
-              View Projects
+              {lang === 'zh' ? '查看作品' : 'View Projects'}
               <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
@@ -47,7 +52,6 @@ const Hero = () => {
         <div className="flex-1 flex justify-center md:justify-end relative z-10">
           <div className="relative w-64 h-64 md:w-[350px] md:h-[350px] rounded-[2rem] shadow-[0_20px_40px_rgba(139,161,154,0.25)] transform hover:scale-[1.02] transition-transform duration-500">
             <div className="w-full h-full rounded-[2rem] overflow-hidden border-[6px] border-white bg-card">
-              {/* Using a placeholder for the portfolio image, the user can replace this later */}
               <img
                 src={personalInfo.imgUrl}
                 alt="Profile"

@@ -1,15 +1,22 @@
 import React from 'react';
 import { FileText } from 'lucide-react';
-import { research } from '../data';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Research = () => {
+  const { lang, t } = useLanguage();
+  const { research } = t;
+
   return (
     <section id="research" className="py-20 px-6 lg:px-8 max-w-4xl mx-auto">
       <div className="mb-12 text-center md:text-left flex items-center gap-3 justify-center md:justify-start">
         <FileText className="text-primary hidden md:block" size={32} />
         <div>
-          <h2 className="text-sm font-semibold text-primary tracking-widest uppercase mb-1">Academic</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-text">Research & Publications</h3>
+          <h2 className="text-sm font-semibold text-primary tracking-widest uppercase mb-1">
+            {lang === 'zh' ? '學術成就' : 'Academic'}
+          </h2>
+          <h3 className="text-3xl md:text-4xl font-bold text-text">
+            {lang === 'zh' ? '研究與發表' : 'Research & Publications'}
+          </h3>
         </div>
       </div>
 

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { ExternalLink, Github, ChevronRight, ChevronLeft, X, Image } from 'lucide-react';
-import { projects } from '../data';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const { lang, t } = useLanguage();
+  const { projects } = t;
 
   // Helper to trap clicks inside modal and prevent background dismissal
   const handleModalContentClick = (e) => {
@@ -32,8 +34,12 @@ const Projects = () => {
     <section id="projects" className="py-20 px-6 lg:px-8 bg-dark/30 border-t border-card relative">
       <div className="max-w-6xl mx-auto">
         <div className="mb-14 text-center">
-          <h2 className="text-sm font-semibold text-primary tracking-widest uppercase mb-2">Portfolio</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-text">Featured Projects</h3>
+          <h2 className="text-sm font-semibold text-primary tracking-widest uppercase mb-2">
+            {lang === 'zh' ? '作品集' : 'Portfolio'}
+          </h2>
+          <h3 className="text-3xl md:text-4xl font-bold text-text">
+            {lang === 'zh' ? '精選專案' : 'Featured Projects'}
+          </h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -44,16 +50,20 @@ const Projects = () => {
               <div
                 className="h-48 overflow-hidden relative cursor-pointer"
                 onClick={() => openModal(project)}
-                title={project.type === 'album' ? "點擊瀏覽相簿" : "點擊放大圖片"}
+                title={project.type === 'album' 
+                  ? (lang === 'zh' ? "點擊瀏覽相簿" : "Click to view album") 
+                  : (lang === 'zh' ? "點擊放大圖片" : "Click to enlarge image")}
               >
                 {project.type === 'album' && (
                   <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs px-2.5 py-1.5 rounded-md z-20 flex items-center gap-1.5 font-medium shadow-sm">
-                    <Image size={14} /> Album ({project.gallery?.length || 0})
+                    <Image size={14} /> {lang === 'zh' ? '相簿' : 'Album'} ({project.gallery?.length || 0})
                   </div>
                 )}
                 <div className="absolute inset-0 bg-darker/10 group-hover:bg-transparent transition-colors z-10 w-full h-full flex items-center justify-center">
                   <span className="bg-darker/90 text-text text-sm py-1.5 px-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity transform scale-95 group-hover:scale-100 font-bold shadow-md">
-                    {project.type === 'album' ? 'View Album' : 'View Image'}
+                    {project.type === 'album' 
+                      ? (lang === 'zh' ? '查看相簿' : 'View Album') 
+                      : (lang === 'zh' ? '查看大圖' : 'View Image')}
                   </span>
                 </div>
                 <img
@@ -91,7 +101,7 @@ const Projects = () => {
                     rel="noreferrer"
                     className="flex items-center gap-1 text-sm font-bold text-primary hover:text-accent transition-colors py-1 px-2 rounded-lg hover:bg-primary/5"
                   >
-                    More <ChevronRight size={18} />
+                    {lang === 'zh' ? '詳細內容' : 'More'} <ChevronRight size={18} />
                   </a>
                 </div>
               </div>
@@ -113,7 +123,7 @@ const Projects = () => {
             <button
               className="absolute -top-12 right-0 md:-right-4 text-white/70 hover:text-white p-2 transition-colors z-50 bg-black/30 hover:bg-black/80 rounded-full"
               onClick={() => setSelectedProject(null)}
-              title="close"
+              title={lang === 'zh' ? "關閉" : "Close"}
             >
               <X size={28} />
             </button>
