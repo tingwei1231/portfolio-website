@@ -8,7 +8,7 @@ const zh = {
     github: "https://github.com/tingwei1231",
     linkedin: "https://www.linkedin.com/in/tingwei1231/",
     about: "性格開朗且熱衷於結合最新技術解決實際問題。在多個專案中擔任核心開發與領導角色，從全端系統架構到 AI 輔助應用皆有實務經驗。",
-    resumeUrl: "./resume.pdf",
+    resumeUrl: "./twCV Ting-Wei Chen.pdf",
     imgUrl: "./tingwei.JPG"
   },
   education: [
@@ -115,8 +115,8 @@ const zh = {
       id: 4,
       date: "2026/01 – 2026/02",
       title: "傳承盃排球錦標賽網站",
-      tags: ["HTML", "CSS", "Vibe Coding"],
-      description: "開發一套以 Google Sheets 為資料來源的 Serverless 排球賽事即時資訊看板系統，提供比分、賽程與裁判排班同步顯示。",
+      tags: ["LLM", "LINEBOT", "HTML", "CSS", "JavaScript"],
+      description: "開發結合Google 試算表與AI 協作的輕量化排球賽事即時資訊系統，提供比分、賽程與裁判排班同步顯示，解決球員對賽事進度與分組排名的資訊落差問題。並設計LINE BOT AI 小助手，協助解答賽程相關問題，有效減少人力資源投入。",
       link: "https://sites.google.com/view/volleyballtorchchampionship",
       type: "album",
       gallery: [
@@ -173,7 +173,7 @@ const en = {
     github: "https://github.com/tingwei1231",
     linkedin: "https://www.linkedin.com/in/tingwei1231/",
     about: "An outgoing individual passionate about applying the latest technologies to solve real-world problems. Experienced as a core developer and leader in multiple projects, with practical expertise ranging from full-stack system architecture to AI-assisted applications.",
-    resumeUrl: "./resume_en.pdf",
+    resumeUrl: "./enCV Ting-Wei Chen.pdf",
     imgUrl: "./tingwei.JPG"
   },
   education: [
@@ -280,8 +280,8 @@ const en = {
       id: 4,
       date: "2026/01 – 2026/02",
       title: "Volleyball Torch Championship Website",
-      tags: ["HTML", "CSS", "Vibe Coding"],
-      description: "Developed a Serverless real-time information dashboard using Google Sheets as the data source, displaying live scores, match schedules, and referee rosters synchronously.",
+      tags: ["LLM", "LINEBOT", "HTML", "CSS", "JavaScript"],
+      description: "Built a lightweight volleyball info system with Google Sheets and AI, synchronizing scores, schedules, and referee assignments to improve player visibility. Created a LINE BOT AI assistant to handle schedule queries, reducing manual workload.",
       link: "https://sites.google.com/view/volleyballtorchchampionship",
       type: "album",
       gallery: [
