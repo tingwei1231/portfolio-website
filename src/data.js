@@ -211,9 +211,9 @@ const en = {
     },
     {
       date: "2019 – 2023",
-      title: "Student Association President / Orientation Camp Coordinator",
+      title: "Student Association President / Orientation Camp General Coordinator",
       institution: "Dept. of Computer Science, NTUE",
-      description: "Served as the president of the Student Association, chief coordinator of a 100-person joint orientation camp, and captain of the department's volleyball team. Responsible for organizing large-scale camps, budgeting, and cross-departmental communication."
+      description: "Served as the president of the Student Association, general coordinator of a 100-person joint orientation camp, and captain of the department's volleyball team. Responsible for organizing large-scale camps, budgeting, and cross-departmental communication."
     }
   ],
   skills: {
