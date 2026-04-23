@@ -86,7 +86,7 @@ const zh = {
       date: "2024/10 – 2024/11",
       title: "雙平台醫學會學術演講會 APP",
       tags: ["Android Studio", "Swift", "MySQL"],
-      description: "開發支援 iOS 與 Android 的學術演講 APP，提供日程、交通、講座資訊，提升參與者的體驗。",
+      description: "開發支援 iOS 與 Android 的學術演講 APP，提供日程、交通、講座資訊，提升參與者的體驗，下載次數約為100+次。",
       link: "",
       type: "album",
       gallery: [
@@ -107,7 +107,7 @@ const zh = {
       date: "2025/02 – 2025/06",
       title: "課程預約系統",
       tags: ["PHP", "MySQL", "HTML", "CSS", "Bootstrap"],
-      description: "用 PHP 結合 MySQL 讓課堂學生可線上預約助教課的作業 Demo 及小考時段，提高教學管理效率，HTML 結合 CSS 及 Bootstrap 優化界面美觀。",
+      description: "用 PHP 結合 MySQL 讓50+位學生可線上預約助教課的作業 Demo 及小考時段，提高教學管理效率，HTML 結合 CSS 及 Bootstrap 優化界面美觀。",
       link: "",
       imgUrl: "./demo.png"
     },
@@ -116,7 +116,7 @@ const zh = {
       date: "2026/01 – 2026/02",
       title: "傳承盃排球錦標賽網站",
       tags: ["LLM", "LINEBOT", "HTML", "CSS", "JavaScript"],
-      description: "開發結合Google 試算表與AI 協作的輕量化排球賽事即時資訊系統，提供比分、賽程與裁判排班同步顯示，解決球員對賽事進度與分組排名的資訊落差問題。並設計LINE BOT AI 小助手，協助解答賽程相關問題，有效減少人力資源投入。",
+      description: "開發結合Google 試算表與AI 協作的輕量化排球賽事即時資訊系統，提供比分、賽程與裁判排班同步顯示，解決球員對賽事進度與分組排名的資訊落差問題。並設計LINE BOT AI 小助手，協助解答賽程相關問題，有效減少30%的人力資源投入。",
       link: "https://sites.google.com/view/volleyballtorchchampionship",
       type: "album",
       gallery: [
@@ -227,7 +227,7 @@ const en = {
   research: [
     {
       title: "An Efficient Period-LS-List-Based Approach for Mining Top-k High On-Shelf Utility Itemsets within Specific Time Periods in Incremental Databases",
-      description: "Utilized the Period-LS-List data structure to efficiently mine high on-shelf utility itemsets from incremental databases, simulating real-world market sales scenarios.",
+      description: "The Period-LS-List data structure is effectively used to mine high utility itemsets from incremental databases, employing a pruning strategy that improves processing time by up to 46%.",
       venue: "Master's Thesis"
     },
     {
@@ -251,7 +251,7 @@ const en = {
       date: "2024/10 – 2024/11",
       title: "Dual-Platform Academic Conference APP",
       tags: ["Android Studio", "Swift", "MySQL"],
-      description: "Developed an academic conference app for iOS and Android, providing schedules, transportation info, and lecture details to enhance the attendee experience.",
+      description: "Developed an academic conference app for iOS and Android, providing schedules, transportation info, and lecture details to enhance the attendee experience. Downloaded 100+ times.",
       link: "",
       type: "album",
       gallery: [
@@ -272,7 +272,7 @@ const en = {
       date: "2025/02 – 2025/06",
       title: "Course Reservation System",
       tags: ["PHP", "MySQL", "HTML", "CSS", "Bootstrap"],
-      description: "Used PHP and MySQL to allow students to book online slots for homework demos and quizzes in TA sessions, improving teaching management. UI was enhanced using HTML, CSS, and Bootstrap.",
+      description: "Used PHP and MySQL to allow 50+ students to book online slots for homework demos and quizzes in TA sessions, improving teaching management. UI was enhanced using HTML, CSS, and Bootstrap.",
       link: "",
       imgUrl: "./demo.png"
     },
@@ -281,7 +281,7 @@ const en = {
       date: "2026/01 – 2026/02",
       title: "Volleyball Torch Championship Website",
       tags: ["LLM", "LINEBOT", "HTML", "CSS", "JavaScript"],
-      description: "Built a lightweight volleyball info system with Google Sheets and AI, synchronizing scores, schedules, and referee assignments to improve player visibility. Created a LINE BOT AI assistant to handle schedule queries, reducing manual workload.",
+      description: "Built a lightweight volleyball info system with Google Sheets and AI, synchronizing scores, schedules, and referee assignments to improve player visibility. Created a LINE BOT AI assistant to handle schedule queries, reducing 30% manual workload.",
       link: "https://sites.google.com/view/volleyballtorchchampionship",
       type: "album",
       gallery: [
