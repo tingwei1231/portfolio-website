@@ -205,8 +205,8 @@ const en = {
     },
     {
       date: "2025",
-      title: "Programming Instructor",
-      institution: "High School Thesis (Optimal Campus Path)",
+      title: "Technical Mentor",
+      institution: "High School Essay (Optimal Campus Path)",
       description: "Guided a junior student in using Python to implement Dijkstra's algorithm for campus navigation, improving the efficiency of freshmen and visitors in locating classrooms."
     },
     {
