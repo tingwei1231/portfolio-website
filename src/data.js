@@ -200,7 +200,7 @@ const en = {
     {
       date: "2024",
       title: "Technical Partner",
-      institution: "Taiwan Society of Otolaryngology Head and Neck Surgery",
+      institution: "Taiwan Society of Otorhinolaryngology Head and Neck Surgery",
       description: "Assisted in developing an exclusive dual-platform (iOS/Android) APP for the academic conference, providing attendees with a smooth and responsive digital interactive experience."
     },
     {
