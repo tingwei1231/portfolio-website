@@ -26,7 +26,7 @@ const Hero = () => {
           <h2 className="text-xl md:text-2xl text-muted font-light mb-6">
             {personalInfo.title}
           </h2>
-          <p className="text-base md:text-lg text-muted/80 leading-relaxed mb-10 max-w-xl mx-auto md:mx-0">
+          <p className="text-base md:text-lg text-muted/80 leading-relaxed mb-10 max-w-xl mx-auto md:mx-0 whitespace-pre-line">
             {personalInfo.about}
           </p>
 
