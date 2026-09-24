@@ -27,6 +27,12 @@ const zh = {
   ],
   experience: [
     {
+      date: "2026/07 – 2026/09",
+      title: "軟體工程師 (Product Developer)",
+      institution: "新加坡商鈦坦科技 (Titansoft)",
+      description: "使用 ASP.NET 串接第三方金流服務，搭配 Claude Code 加速開發測試，運用 ELK 於值班期間進行問題排查與監控。"
+    },
+    {
       date: "2020-Recent",
       title: "排球賽事負責人",
       institution: "傳承盃排球錦標賽",
@@ -52,12 +58,13 @@ const zh = {
     }
   ],
   skills: {
-    "基本語言": ["C++", "Java", "Python"],
-    "AI & 自然語言處理": ["LLM", "RAG", "LangGraph"],
-    "語音與影像處理": ["STT", "VAD", "OpenCV"],
+    "基本語言": ["C++", "C#", "Java", "Python"],
+    "開發方法論": ["Scrum", "Agile"],
+    "後端開發": ["ASP.NET", "PHP", "MySQL"],
+    "前端開發": ["HTML", "CSS", "JavaScript", "Vue", "React"],
     "行動應用": ["Android Studio", "Swift"],
-    "前端開發": ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
-    "後端開發": ["PHP", "MySQL"]
+    "版本控制": ["Git", "Kubernetes"],
+    "監控與維運": ["ELK", "Grafana"]
   },
   research: [
     {
@@ -74,15 +81,6 @@ const zh = {
   projects: [
     {
       id: 1,
-      date: "2026/02 – 2026/03",
-      title: "TOmni-Care 台語語音助理",
-      tags: ["LLM", "Python", "Faster-Whisper", "RAG", "Bert-VITS2", "LangGraph"],
-      description: "結合 LangGraph 狀態機與 RAG 醫療知識庫，開發支援台語 ASR/TTS 與情緒感知功能的低延遲 AI 語音照護助理。",
-      link: "https://github.com/tingwei1231/tomni-care",
-      imgUrl: "./TOmin-Care.png"
-    },
-    {
-      id: 2,
       date: "2024/10 – 2024/11",
       title: "雙平台醫學會學術演講會 APP",
       tags: ["Android Studio", "Swift", "MySQL"],
@@ -103,7 +101,7 @@ const zh = {
       imgUrl: "./tsohns117.jpg"
     },
     {
-      id: 3,
+      id: 2,
       date: "2025/02 – 2025/06",
       title: "課程預約系統",
       tags: ["PHP", "MySQL", "HTML", "CSS", "Bootstrap"],
@@ -112,7 +110,7 @@ const zh = {
       imgUrl: "./demo.png"
     },
     {
-      id: 4,
+      id: 3,
       date: "2026/01 – 2026/02",
       title: "傳承盃排球錦標賽網站",
       tags: ["LLM", "LINEBOT", "HTML", "CSS", "JavaScript"],
@@ -127,7 +125,7 @@ const zh = {
       imgUrl: "./volleyballtorch.png"
     },
     {
-      id: 5,
+      id: 4,
       date: "2022/07 – 2022/12",
       title: "排球戰術追蹤研究",
       tags: ["Python", "Image Processing", "OpenCV"],
@@ -143,7 +141,7 @@ const zh = {
       imgUrl: "./volleyballtracker.png"
     },
     {
-      id: 6,
+      id: 5,
       date: "2024/09 – 2025/07",
       title: "臨床醫學博士學位學程網頁維護",
       tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
@@ -152,7 +150,7 @@ const zh = {
       imgUrl: "./dpcem.png"
     },
     {
-      id: 7,
+      id: 6,
       date: "2025/02 – 2025/07",
       title: "國立中山大學未來學生網頁維護",
       tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
@@ -192,6 +190,12 @@ const en = {
   ],
   experience: [
     {
+      date: "Jul 2026 – Sep 2026",
+      title: "Product Developer",
+      institution: "Titansoft",
+      description: "Integrated a third-party payment gateway using ASP.NET, leveraging Claude Code to accelerate development and testing, and used the ELK stack for troubleshooting and monitoring during on-call shifts."
+    },
+    {
       date: "2020-Recent",
       title: "Tournament Director",
       institution: "Volleyball Torch Championship",
@@ -217,12 +221,13 @@ const en = {
     }
   ],
   skills: {
-    "Basic Languages": ["C++", "Java", "Python"],
-    "AI & NLP": ["LLM", "RAG", "LangGraph"],
-    "Voice & Image Processing": ["STT", "VAD", "OpenCV"],
+    "Basic Languages": ["C++", "C#", "Java", "Python"],
+    "Dev Methodology": ["Scrum", "Agile"],
+    "Back-End": ["ASP.NET", "PHP", "MySQL"],
+    "Front-End": ["HTML", "CSS", "JavaScript", "Vue", "React"],
     "Mobile Apps": ["Android Studio", "Swift"],
-    "Front-End": ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
-    "Back-End": ["PHP", "MySQL"]
+    "Version Control": ["Git", "Kubernetes"],
+    "Monitoring & Ops": ["ELK", "Grafana"]
   },
   research: [
     {
@@ -239,15 +244,6 @@ const en = {
   projects: [
     {
       id: 1,
-      date: "2026/02 – 2026/03",
-      title: "TOmni-Care Taiwanese Voice Assistant",
-      tags: ["LLM", "Python", "Faster-Whisper", "RAG", "Bert-VITS2", "LangGraph"],
-      description: "Integrated LangGraph state machine with a RAG medical knowledge base to develop a low-latency AI voice care assistant supporting Taiwanese ASR/TTS and emotion awareness.",
-      link: "https://github.com/tingwei1231/tomni-care",
-      imgUrl: "./TOmin-Care.png"
-    },
-    {
-      id: 2,
       date: "2024/10 – 2024/11",
       title: "Dual-Platform Academic Conference APP",
       tags: ["Android Studio", "Swift", "MySQL"],
@@ -268,7 +264,7 @@ const en = {
       imgUrl: "./tsohns117.jpg"
     },
     {
-      id: 3,
+      id: 2,
       date: "2025/02 – 2025/06",
       title: "Course Reservation System",
       tags: ["PHP", "MySQL", "HTML", "CSS", "Bootstrap"],
@@ -277,7 +273,7 @@ const en = {
       imgUrl: "./demo.png"
     },
     {
-      id: 4,
+      id: 3,
       date: "2026/01 – 2026/02",
       title: "Volleyball Torch Championship Website",
       tags: ["LLM", "LINEBOT", "HTML", "CSS", "JavaScript"],
@@ -292,7 +288,7 @@ const en = {
       imgUrl: "./volleyballtorch.png"
     },
     {
-      id: 5,
+      id: 4,
       date: "2022/07 – 2022/12",
       title: "Volleyball Tactics Tracking Research",
       tags: ["Python", "Image Processing", "OpenCV"],
@@ -308,7 +304,7 @@ const en = {
       imgUrl: "./volleyballtracker.png"
     },
     {
-      id: 6,
+      id: 5,
       date: "2024/09 – 2025/07",
       title: "Doctoral Program of Clinical and Experimental Medicine Website Maintenance",
       tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
@@ -317,7 +313,7 @@ const en = {
       imgUrl: "./dpcem.png"
     },
     {
-      id: 7,
+      id: 6,
       date: "2025/02 – 2025/07",
       title: "NSYSU Future Students Website Maintenance",
       tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
