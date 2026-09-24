@@ -7,7 +7,7 @@ const zh = {
     location: "臺中市西屯區惠來路三段 218號9樓之 2",
     github: "https://github.com/tingwei1231",
     linkedin: "https://www.linkedin.com/in/tingwei1231/",
-    about: "性格開朗且熱衷於結合最新技術解決實際問題。在多個專案中擔任核心開發與領導角色，從全端系統架構到 AI 輔助應用皆有實務經驗。",
+    about: "活潑外向，擅長團隊合作與跨領域協作，具備軟體開發背景，樂於嘗試新AI技術。歷經值班歷練，培養出刻苦耐勞、穩定抗壓特質，曾主導開發多項系統，提升資訊透明度與使用效率，展現技術落地的執行力。\n#團隊合作 #Scrum #跨領域協作 #抗壓耐勞 #AI應用 #執行力",
     resumeUrl: "./twCV Ting-Wei Chen.pdf",
     imgUrl: "./tingwei.JPG"
   },
@@ -59,7 +59,7 @@ const zh = {
   ],
   skills: {
     "基本語言": ["C++", "C#", "Java", "Python"],
-    "開發方法論": ["Scrum", "Agile"],
+    "開發框架": ["Scrum", "Agile"],
     "後端開發": ["ASP.NET", "PHP", "MySQL"],
     "前端開發": ["HTML", "CSS", "JavaScript", "Vue", "React"],
     "行動應用": ["Android Studio", "Swift"],
@@ -170,7 +170,7 @@ const en = {
     location: "9F.-2, No. 218, Sec. 3, Huilai Rd., Xitun Dist., Taichung City",
     github: "https://github.com/tingwei1231",
     linkedin: "https://www.linkedin.com/in/tingwei1231/",
-    about: "An outgoing individual passionate about applying the latest technologies to solve real-world problems. Experienced as a core developer and leader in multiple projects, with practical expertise ranging from full-stack system architecture to AI-assisted applications.",
+    about: "Collaborative software engineer with a growing interest in AI. On-call experience has sharpened my resilience under pressure, and I've led system development that measurably improved information transparency and operational efficiency.\n#Teamwork #Scrum #Collaboration #Resilience #AIApplications #Execution",
     resumeUrl: "./enCV Ting-Wei Chen.pdf",
     imgUrl: "./tingwei.JPG"
   },
@@ -222,7 +222,7 @@ const en = {
   ],
   skills: {
     "Basic Languages": ["C++", "C#", "Java", "Python"],
-    "Dev Methodology": ["Scrum", "Agile"],
+    "Development Framework": ["Scrum", "Agile"],
     "Back-End": ["ASP.NET", "PHP", "MySQL"],
     "Front-End": ["HTML", "CSS", "JavaScript", "Vue", "React"],
     "Mobile Apps": ["Android Studio", "Swift"],
