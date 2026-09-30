@@ -80,6 +80,14 @@ const zh = {
   ],
   projects: [
     {
+      id: 7,
+      title: "Coding Guide 程式學習網站",
+      tags: ["React", "TypeScript", "Vite", "Markdown", "JSON"],
+      description: "開發 Coding Guide 程式學習網站，使用 React、TypeScript 與 Vite，整合資料結構、時間複雜度、六大解題模式與學習路線，並提供 Python、Java、C++ 範例對照、模板庫與概念測驗，協助初學者理解解法差異。教材以 Markdown/JSON 管理，培養了我將技術知識結構化並轉化為清楚說明的能力。",
+      link: "https://tingwei1231.github.io/coding_guide/",
+      imgUrl: "./coding_guide.png"
+    },
+    {
       id: 1,
       date: "2024/10 – 2024/11",
       title: "雙平台醫學會學術演講會 APP",
@@ -242,6 +250,14 @@ const en = {
     }
   ],
   projects: [
+    {
+      id: 7,
+      title: "Coding Guide Programming Learning Website",
+      tags: ["React", "TypeScript", "Vite", "Markdown", "JSON"],
+      description: "Developed Coding Guide, a programming learning website built with React, TypeScript, and Vite, covering data structures, time complexity, six core problem-solving patterns, and learning roadmaps. It offers side-by-side Python, Java, and C++ examples, a template library, and concept quizzes to help beginners understand differences between solutions. Managing the learning materials in Markdown/JSON strengthened my ability to structure technical knowledge and turn it into clear explanations.",
+      link: "https://tingwei1231.github.io/coding_guide/",
+      imgUrl: "./coding_guide.png"
+    },
     {
       id: 1,
       date: "2024/10 – 2024/11",
