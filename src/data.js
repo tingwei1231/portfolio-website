@@ -7,7 +7,7 @@ const zh = {
     location: "臺中市西屯區惠來路三段 218號9樓之 2",
     github: "https://github.com/tingwei1231",
     linkedin: "https://www.linkedin.com/in/tingwei1231/",
-    about: "活潑外向，擅長團隊合作與跨領域協作，具備軟體開發背景，樂於嘗試新AI技術。歷經值班歷練，培養出刻苦耐勞、穩定抗壓特質，曾主導開發多項系統，提升資訊透明度與使用效率，展現技術落地的執行力。\n#團隊合作 #Scrum #跨領域協作 #抗壓耐勞 #AI應用 #執行力",
+    about: "具備軟體開發與 IT 系統維運背景，擅長跨領域協作與團隊溝通。歷經金流串接、系統開發與值班日誌監控（ELK）排查歷練，養成高度抗壓與獨立解決問題能力，樂於導入 AI 工具提升團隊開發與營運效率。\n#軟體開發 #IT維運監控 #系統排查 #Scrum #團隊合作 #AI應用",
     resumeUrl: "./twCV Ting-Wei Chen.pdf",
     imgUrl: "./tingwei.JPG"
   },
@@ -178,7 +178,7 @@ const en = {
     location: "9F.-2, No. 218, Sec. 3, Huilai Rd., Xitun Dist., Taichung City",
     github: "https://github.com/tingwei1231",
     linkedin: "https://www.linkedin.com/in/tingwei1231/",
-    about: "Collaborative software engineer with a growing interest in AI. On-call experience has sharpened my resilience under pressure, and I've led system development that measurably improved information transparency and operational efficiency.\n#Teamwork #Scrum #Collaboration #Resilience #AIApplications #Execution",
+    about: "Software engineer skilled in application development, IT system monitoring, and troubleshooting. Experienced in ASP.NET payment integration, ELK log analysis, and on-call operations under pressure. Passionate about leveraging AI tools and agile practices to boost operational efficiency and project delivery.\n#SoftwareEngineering #ITOperations #SystemTroubleshooting #Scrum #Teamwork #AIIntegration",
     resumeUrl: "./enCV Ting-Wei Chen.pdf",
     imgUrl: "./tingwei.JPG"
   },
